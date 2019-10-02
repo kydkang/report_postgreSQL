@@ -46,7 +46,7 @@ class Area(models.Model):
 
 class Location(models.Model):  
     location_code  = models.CharField(max_length=6, primary_key=True, verbose_name='Localización Código') 
-    province    = models.CharField(max_length=50)
+    provincia    = models.CharField(max_length=50)
     canton      = models.CharField(max_length=50)
     parroquia   = models.CharField(max_length=50)
     parroquia_mapa = models.MultiPolygonField(blank=True, verbose_name='Parroquia Mapa') 
